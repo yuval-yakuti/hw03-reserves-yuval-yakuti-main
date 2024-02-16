@@ -1,7 +1,10 @@
-/** String processing exercise 2. */
+/** String processing exercise 2. */ save 
 public class UniqueChars {
     public static void main(String[] args) {  
-        String str = args[0];
+        String str = "";
+        if (args.length > 0){
+            str = args[0];
+        }
         System.out.println(uniqueChars(str));
     }
 
@@ -12,6 +15,15 @@ public class UniqueChars {
      */
     public static String uniqueChars(String s) {
         // Replace the following statement with your code
-        return null;
+        String ans = "";
+        int i = 0;
+        while (i < s.length()){
+            char current = s.charAt(i);
+            if ((s.indexOf(current) == i) || (current == ' ') ){
+                ans = ans + current;
+            }
+            i++;
+        }
+        return ans;
     }
 }
