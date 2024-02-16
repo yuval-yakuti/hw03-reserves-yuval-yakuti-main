@@ -1,4 +1,4 @@
-/** String processing exercise 2. */ save 
+/** String processing exercise 2. */ 
 public class UniqueChars {
     public static void main(String[] args) {  
         String str = "";
@@ -7,7 +7,6 @@ public class UniqueChars {
         }
         System.out.println(uniqueChars(str));
     }
-
     /**
      * Returns a string which is identical to the original string, 
      * except that all the duplicate characters are removed,
